@@ -1,21 +1,17 @@
-console.log("diary");
+var d = new Date();
 
-(function(win, doc) {
-    var inspotService = function() {
-        this.init();
-    };
+document.getElementById("currentYear").getFullYear();
+/*
+document.write('현재 월: ' + (d.getMonth() + 1) + '<br />');
+document.write('현재 일: ' + d.getDate() + '<br />');
 
-    inspotService.prototype = {
-        init: function() {
-            console.log("==============>>> dom content loaded");
-            setCurrentTime();
-        }
-      };
+document.write('<br />'); // 줄바꿈
 
-      function setCurrentTime() {
-          var selectedTimeObj = doc.getElementById("currentTime");
-          selectedTimeObj.innerHTML = getCurrentDate("/");
-      }
+document.write('현재 시: ' + d.getHours() + '<br />');
+document.write('현재 분: ' + d.getMinutes() + '<br />');
+document.write('현재 초: ' + d.getSeconds() + '<br />');
 
+document.write('<br />');
 
-})(window, document);
+document.write('오늘 요일: ' + d.getDay() + '<br />'); // 일요일 = 0
+*/
