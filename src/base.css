@@ -72,7 +72,7 @@ p {
 #settingButton {
     float: right;
     margin-right: 50px;
-    margin-top: 12px;
+    margin-top: 13px;
 }
 
 /* */
@@ -93,7 +93,7 @@ p {
   width: 370px;
   height: 65px;
   margin-top: 0;
-  padding-top: 3px;
+  padding-top: 10px;
   background-color: #524db0;
   font-size: 14px;
   font-weight: 100;
