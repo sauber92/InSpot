@@ -4,11 +4,9 @@ html {
 body {
   position: relative;
   padding: 0;
-  /*background-color: #F6F6F6;*/
   font-family: 'Spoqa Han Sans', 'Sans-serif';
   font-size: 30px;
-  /*color: #555;*/
-  /*opacity: 0;*/
+  overflow: hidden;
 }
 h1,
 h2,
@@ -38,7 +36,7 @@ p {
 }
 
 .temper {
-  width: 240px;
+  width: 245px;
 	height: 50px;
 	background-color: #47568f;
 }
@@ -58,7 +56,7 @@ p {
 
 #placeTag {
   float: left;
-  margin-left: 65px;
+  margin-left: 70px;
   margin-top: 13px;
   width: 85px;
 	height: 24px;
@@ -87,7 +85,7 @@ p {
 #settingButton {
   float: right;
   margin-right: 50px;
-  margin-top: 0px;     /*   */
+  margin-top: 15px;     /*   */
 }
 
 /* */
