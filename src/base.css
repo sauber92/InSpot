@@ -18,13 +18,13 @@ p {
     line-height: 22px;
 }
 .sentence {
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 100;
     text-align: center;
     color: #ffffff;
 }
 .sentence2 {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 100;
     text-align: center;
     color: red;
@@ -97,7 +97,7 @@ p {
   width: 370px;
   height: 65px;
   margin-top: 0;
-  background-color: #2b3565;
+  background-color: ##524db0;
 }
 #blank {
     float: left;
