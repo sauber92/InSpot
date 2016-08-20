@@ -36,9 +36,9 @@ p {
 }
 .current-time {
     float: left;
-    width: 100px;
+    width: 10px;
     /*123*/
-    height: 100px;
+    height: 10px;
     /* 189*/
     background-color: #c5d5f1;
 }
