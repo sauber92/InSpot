@@ -70,7 +70,7 @@ function printCurrentHHMM() {
       hh -= 12;
       apm = "PM";
     }
-    var hhmmName = currentTime.getHours() + ":" + currentTime.getMinutes() + " " + apm;
+    var hhmmName = hh + ":" + currentTime.getMinutes() + " " + apm;
     hhmmID.innerHTML = hhmmName;
 }
 
