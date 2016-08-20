@@ -26,7 +26,7 @@ p {
     -webkit-text-stroke-width: 0.5px;
 }
 .temper {
-    width: 240px;
+    width: 242px;
     height: 66px;
     background-color: #47568f;
 }
@@ -34,7 +34,7 @@ p {
     float: left;
     width: 123px;
     /*123*/
-    height: 182px;
+    height: 183px;
     /* 189*/
     background-color: #c5d5f1;
 }
@@ -91,7 +91,7 @@ p {
 }
 #sentenceBlock {
   width: 370px;
-  height: 65px;
+  height: 60px;
   margin-top: 0;
   padding-top: 12px;
   background-color: #524db0;
