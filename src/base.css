@@ -30,8 +30,8 @@ p {
 }
 .current-time {
     float: left;
-    width: 123px;
-    height: 189px;
+    width: 100px; /*123*/
+    height: 100px; /* 189*/
     background-color: #c5d5f1;
 }
 #logo {
