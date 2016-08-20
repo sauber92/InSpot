@@ -1,5 +1,5 @@
 html {
-    height: 100%;
+    /*height: 100%;*/
 }
 body {
     position: relative;
@@ -20,8 +20,22 @@ p {
 .sentence {
     width: 370px;
     height: 65px;
-    margin-top: 0px;
+    margin-top: 3px;
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
     background-color: #2b3565;
+    color: #ffffff;
+}
+.sentence2 {
+    width: 370px;
+    height: 65px;
+    margin-top: 3px;
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+    background-color: #2b3565;
+    color: red;
 }
 .temper {
     width: 246px;
@@ -30,8 +44,10 @@ p {
 }
 .current-time {
     float: left;
-    width: 100px; /*123*/
-    height: 100px; /* 189*/
+    width: 100px;
+    /*123*/
+    height: 100px;
+    /* 189*/
     background-color: #c5d5f1;
 }
 #logo {
