@@ -71,7 +71,7 @@ function printCurrentHHMM() {
       hh -= 12;
       apm = "PM";
     }
-    if(mm < 10) {
+    else if(mm < 10) {
       mm = "0" + mm;
     }
     var hhmmName = hh + ":" + mm + " " + apm;
