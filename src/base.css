@@ -30,10 +30,22 @@ p {
   line-height: 22px;
 }
 
+.sentence {
+  width: 300px;
+	height: 20px;
+	background-color: #2b3565;
+}
 
+.temper {
+  width: 256px;
+	height: 65px;
+	background-color: #47568f;
+}
 
 .current-time {
-  /*color : #ffffff;*/
+  width: 85px;
+	height: 150px;
+	background-color: #c5d5f1;
 }
 
 #logo {
@@ -49,7 +61,7 @@ p {
   width: 85px;
 	height: 24px;
 	border-radius: 12px;
-  background-color: #418cff;
+  /*background-color: #418cff;*/
 	border: solid 2px #418cff;
   font-size: 16px;
 	font-weight: 100;
@@ -64,7 +76,7 @@ p {
   width: 85px;
 	height: 24px;
 	border-radius: 12px;
-  background-color: #418cff;
+  /*background-color: #418cff;*/
 	border: solid 2px #418cff;
   font-size: 16px;
 	font-weight: 100;
@@ -93,6 +105,7 @@ p {
 }
 #firstGrid {
   float: left;
+  margin-left: 9px;
 }
 #blank {
   float: left;
