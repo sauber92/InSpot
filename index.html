@@ -3,62 +3,56 @@
 <head>
 	<title>InSpot#place</title>
 	<meta charset="utf-8">
-
-	<style>
-		#popPicture {
-				float: left;
-		}
-		#gridPicture {
-				float: left;
-		}
-	</style>
+	<link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+	<link href="/src/base.css" rel="stylesheet" />
 </head>
 
 <body>
-	<script src="/instashow/jquery.instashow.packaged.js"></script>
+	<script src="instashow/jquery.instashow.packaged.js"></script>
+
 	<div id="popPicture">
 		<div data-is data-is-api="/instashow/api/"
-				data-is-source="#경복궁"
+				data-is-source="@jjy920517"
 				data-is-cache-media-time="0"
-				data-is-width="auto"
-				data-is-height="250px" data-is-columns="1"
+				data-is-width="384px"
+				data-is-height="384px"
+				data-is-columns="1"
 				data-is-rows="1"
 				data-is-direction="horizontal"
 				data-is-lang="ko"
 				data-is-popup-info="none">
 		</div>
+		<div>
+			<h4>blar blar</h4>
+		</div>
 	</div>
+
+	<div></div>
+
 	<div id="gridPicture">
 		<div data-is data-is-api="/instashow/api/"
-				data-is-source="#경복궁"
+				data-is-source="@yooj_kel"
 				data-is-cache-media-time="0"
-				data-is-width="auto"
-				data-is-height="500px"
+				data-is-width="256px"
+				data-is-height="auto"
 				data-is-effect="slide"
 				data-is-speed="600"
-				data-is-columns="5"
-				data-is-rows="3"
+				data-is-columns="2"
+				data-is-rows="2"
 				data-is-direction="horizontal"
 				data-is-lang="ko"
 				data-is-info="none"
 				data-is-popup-info="none">
 		</div>
+
+		<div class="current-time">
+			<h5 id="currentTime"></h5>
+		</div>
+
 	</div>
-	<script>
-		window.onInstaShowReady = function() {
-			$('.my-instashow').instaShow({
-				api: '/instashow/api/',
-				source: '#london',
-				width: 'auto',
-				height: '500px',
-				columns: 5,
-				rows: 3,
-				direction: 'vertical',
-				lang: 'en',
-				popupInfo: ''
-			});
-		};
-	</script>
+
+<script type="text/javascript" src="/src/inspot.js"></script>
+
 </body>
 
 </html>
