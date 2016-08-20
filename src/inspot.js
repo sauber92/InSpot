@@ -31,8 +31,8 @@ function printCurrentYear() {
 
 function printCurrentMonth() {
     console.log("Month");
-    var arrMonthNames = ["January", "February", "March", "April", "May", "June",
-        "July", "August", "September", "October", "November", "December"
+    var arrMonthNames = ["JAN", "FEB", "MAR", "APL", "MAY", "JUN",
+        "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"
     ];
     var monthID = document.getElementById("currentMonth");
     var monthName = currentTime.getMonth();
