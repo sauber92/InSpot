@@ -163,13 +163,13 @@ p {
   margin-left: 30px;
 }
 #png {
-  margin-left: 70px;
+  margin-left: 50px;
   margin-top: 7px;
 }
 #p_temp {
   color: #ffffff;
   font-size: 16px;
   float: left;
-  margin-left: 10px;
-  margin-top: 7px;
+  margin-left: 80px;
+  margin-top: -10px;
 }
