@@ -59,9 +59,10 @@ function printCurrentHHMM() {
     var hhmmID = document.getElementById("currentHHMM");
 
     var hh = currentTime.getHours();
+    var mm = currentTime.getMinutes();
     var apm = "AM";
     if(hh < 10) {
-      hh = "0" + "" + hh;
+      hh = "0" + hh;
     }
     else if(hh == 12) {
       apm = "PM";
@@ -70,7 +71,10 @@ function printCurrentHHMM() {
       hh -= 12;
       apm = "PM";
     }
-    var hhmmName = hh + ":" + currentTime.getMinutes() + " " + apm;
+    if(mm < 10) {
+      mm = "0" + mm;
+    }
+    var hhmmName = hh + ":" + mm + " " + apm;
     hhmmID.innerHTML = hhmmName;
 }
 
