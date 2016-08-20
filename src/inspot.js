@@ -1,6 +1,21 @@
-var d = new Date();
+var currentTime = new Date();
 
-document.getElementById("currentYear").getFullYear();
+function printCurrentYear() {
+  var yearID = document.getElementById("currentYear");
+  var yyyy = currentTime.getFullYear();
+  yearID.innerHTML = yyyy;
+}
+
+function printCurrentMonth() {
+  var monthID = document.getElementById("currentMonth");
+  var monthName = currentTime.getMonth();
+  monthID.innerHTML = monthName;
+}
+/*
+window.onload = function() {                         // 페이지가 로딩되면 실행
+  printCurrentTime();
+}
+*/
 /*
 document.write('현재 월: ' + (d.getMonth() + 1) + '<br />');
 document.write('현재 일: ' + d.getDate() + '<br />');

@@ -31,7 +31,7 @@ p {
     background-color: #47568f;
 }
 .current-time {
-    float: right;
+    float: left;
     width: 123px;
     /*123*/
     height: 180px;
