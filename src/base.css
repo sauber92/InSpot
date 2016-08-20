@@ -36,7 +36,7 @@ p {
 }
 .current-time {
     float: left;
-    width: 123px;
+    width: 50px;
     /*123*/
     height: 10px;
     /* 189*/
@@ -96,7 +96,7 @@ p {
 #sentenceBlock {
   width: 370px;
   height: 65px;
-  margin-top: 0;
+  margin-top: -5px;
   background-color: #2b3565;
 }
 #blank {
