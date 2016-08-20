@@ -31,8 +31,8 @@ p {
 }
 
 .top-bar {
-  width: 820px;
-	height: 68px;
+  width: 800px;
+	height: 50px;
 	background-color: #303030;
 }
 
@@ -42,31 +42,42 @@ p {
 
 #logo {
   float: left;
-  margin-top: 23px;
+  margin-top: 13px;
   margin-left: 31px;
 }
 
 #placeTag {
   float: left;
   margin-left: 50px;
-  margin-top: 23px;
+  margin-top: 13px;
   width: 85px;
 	height: 24px;
 	border-radius: 12px;
 	background-color: #f33c56;
+  font-size: 16px;
+	font-weight: 100;
+	text-align: center;
+	color: #fffffe;
 }
 
 #inspotTag {
   float: left;
-  margin-left: 50px;
-  margin-top: 23px;
+  margin-left: 10px;
+  margin-top: 13px;
   width: 85px;
 	height: 24px;
 	border-radius: 12px;
 	background-color: #f33c56;
+  font-size: 16px;
+	font-weight: 100;
+	text-align: center;
+	color: #fffffe;
 }
 
 #settingButton {
+  float: left;
+  margin-left: 30px;
+  margin-top: 13px;
   width: 32px;
 	height: 32px;
   margin-right: 38px;
