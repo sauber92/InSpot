@@ -1,3 +1,5 @@
+console.log("javascript start =====>");
+
 var currentTime = new Date();
 
 function printCurrentYear() {
