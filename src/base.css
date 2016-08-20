@@ -96,7 +96,7 @@ p {
 #sentenceBlock {
   width: 370px;
   height: 65px;
-  margin-top: -5px;
+  margin-top: 0;
   background-color: #2b3565;
 }
 #blank {
@@ -107,5 +107,5 @@ p {
     float: left;
 }
 #thirdGrid {
-    float: left;
+    /*float: left;*/
 }
