@@ -30,10 +30,50 @@ p {
   line-height: 22px;
 }
 
+.top-bar {
+  width: 820px;
+	height: 68px;
+	background-color: #303030;
+}
+
 .current-time {
   /*color : #ffffff;*/
 }
 
+#logo {
+  float: left;
+  margin-top: 23px;
+  margin-left: 31px;
+}
+
+#placeTag {
+  float: left;
+  margin-left: 50px;
+  margin-top: 23px;
+  width: 85px;
+	height: 24px;
+	border-radius: 12px;
+	background-color: #f33c56;
+}
+
+#inspotTag {
+  float: left;
+  margin-left: 50px;
+  margin-top: 23px;
+  width: 85px;
+	height: 24px;
+	border-radius: 12px;
+	background-color: #f33c56;
+}
+
+#settingButton {
+  width: 32px;
+	height: 32px;
+  margin-right: 38px;
+  margin-top: 23px;
+}
+
+/* */
 #popPicture {
   float: left;
 }
