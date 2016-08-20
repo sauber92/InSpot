@@ -48,9 +48,10 @@ function printCurrentDate() {
 
 function printCurrentDay() {
     console.log("Day");
+    var arrDayNames = ["MON", "THU", "WED", "THR", "FRI", "SAT", "SUN"];
     var dayID = document.getElementById("currentDay");
     var dayName = currentTime.getDay();
-    dayID.innerHTML = dayName;
+    dayID.innerHTML = arrDayNames[dayName];
 }
 
 function printCurrentHHMM() {
