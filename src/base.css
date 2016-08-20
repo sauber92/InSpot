@@ -31,20 +31,21 @@ p {
 }
 
 .sentence {
-  width: 300px;
-	height: 65px;
+  width: 390px;
+	height: 40px;
+  margin-top: 0px;
 	background-color: #2b3565;
 }
 
 .temper {
   width: 257px;
-	height: 65px;
+	height: 40px;
 	background-color: #47568f;
 }
 
 .current-time {
-  width: 85px;
-	height: 150px;
+  width: 65px;
+	height: 170px;
 	background-color: #c5d5f1;
 }
 
