@@ -31,6 +31,9 @@ p {
 }
 
 .top-bar {
+  float: left;
+  margin-top: -2px;
+  margin-left: -2px;
   width: 800px;
 	height: 50px;
 	background-color: #303030;
