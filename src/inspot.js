@@ -57,7 +57,20 @@ function printCurrentDay() {
 function printCurrentHHMM() {
     console.log("HHMM");
     var hhmmID = document.getElementById("currentHHMM");
-    var hhmmName = currentTime.getHours() + ":" + currentTime.getMinutes();
+
+    var hh = currentTime.getHours();
+    var apm = "AM";
+    if(hh < 10) {
+      hh = "0" + hh;
+    }
+    else if(hh == 12) {
+      apm = "PM";
+    }
+    else if(hh > 12) {
+      hh -= 12;
+      apm = "PM";
+    }
+    var hhmmName = currentTime.getHours() + ":" + currentTime.getMinutes() + " " + apm;
     hhmmID.innerHTML = hhmmName;
 }
 
