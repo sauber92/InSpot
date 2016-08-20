@@ -150,15 +150,20 @@ p {
   margin-top: 10px;
 }
 #p_name {
+  color: #ffffff;
+  font-size: 16px;
   float: left;
-  margin-left: 5px;
+  margin-left: 30px;
   margin-top: 20px;
 }
 #p_clouds {
-  float: left;
-  margin-left: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 2px;
+  margin-left: 30px;
 }
 #p_temp {
+  color: #ffffff;
   float: left;
   margin-left: 20px;
   margin-top: 30px;
