@@ -26,7 +26,6 @@ p {
     -webkit-text-stroke-width: 0;
 }
 .temper {
-    float: left;
     width: 240px;
     height: 68px;
     background-color: #47568f;
@@ -149,4 +148,18 @@ p {
 	text-align: right;
   padding-right: 12px;
   margin-top: 10px;
+}
+#p_name {
+  float: left;
+  margin-left: 5px;
+  margin-top: 2px;
+}
+#p_clouds {
+  float: left;
+  margin-left: 5px;
+}
+#p_temp {
+  float: left;
+  margin-left: 20px;
+  margin-top: 3px;
 }
