@@ -8,7 +8,7 @@
 </head>
 
 <body>
-	<div class="top-bar">
+	<div id="top-bar">
 			<h3 id="logo">LogoLogo</h3>
 			<p id="placeTag">#place</p>
 			<p id="inspotTag">#InSpot</p>
@@ -17,7 +17,7 @@
 
 	<script src="instashow/jquery.instashow.packaged.js"></script>
 
-	<div id="popPicture">
+	<div id="firstGrid">
 		<div data-is data-is-api="/instashow/api/"
 				data-is-source="@jjy920517"
 				data-is-cache-media-time="0"
@@ -29,14 +29,15 @@
 				data-is-lang="ko"
 				data-is-popup-info="none">
 		</div>
+
 		<div>
-			<h4>blar blar</h4>
+			<p>blar blar</p>
 		</div>
 	</div>
 
-	<div></div>
+	<div id="blank"></div>
 
-	<div id="gridPicture">
+	<div id="secondGrid">
 		<div data-is data-is-api="/instashow/api/"
 				data-is-source="@yooj_kel"
 				data-is-cache-media-time="0"
@@ -52,10 +53,45 @@
 				data-is-popup-info="none">
 		</div>
 
+		<div class="temper">
+
+		</div>
+
+		<div data-is data-is-api="/instashow/api/"
+				data-is-source="@yooj_kel"
+				data-is-cache-media-time="0"
+				data-is-width="256px"
+				data-is-height="auto"
+				data-is-effect="slide"
+				data-is-speed="600"
+				data-is-columns="2"
+				data-is-rows="1"
+				data-is-direction="horizontal"
+				data-is-lang="ko"
+				data-is-info="none"
+				data-is-popup-info="none">
+		</div>
+	</div>
+
+	<div id="thirdGrid">
 		<div class="current-time">
 			<h5 id="currentTime"></h5>
 		</div>
 
+		<div data-is data-is-api="/instashow/api/"
+				data-is-source="@yooj_kel"
+				data-is-cache-media-time="0"
+				data-is-width="256px"
+				data-is-height="auto"
+				data-is-effect="slide"
+				data-is-speed="600"
+				data-is-columns="1"
+				data-is-rows="2"
+				data-is-direction="horizontal"
+				data-is-lang="ko"
+				data-is-info="none"
+				data-is-popup-info="none">
+		</div>
 	</div>
 
 <script type="text/javascript" src="/src/inspot.js"></script>

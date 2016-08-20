@@ -30,14 +30,7 @@ p {
   line-height: 22px;
 }
 
-.top-bar {
-  float: left;
-  margin-left: 0;
-  margin-top: 0;
-  width: 768px;
-	height: 50px;
-	background-color: #303030;
-}
+
 
 .current-time {
   /*color : #ffffff;*/
@@ -56,7 +49,8 @@ p {
   width: 85px;
 	height: 24px;
 	border-radius: 12px;
-	background-color: #f33c56;
+  background-color: #418cff;
+	border: solid 2px #418cff;
   font-size: 16px;
 	font-weight: 100;
 	text-align: center;
@@ -70,7 +64,8 @@ p {
   width: 85px;
 	height: 24px;
 	border-radius: 12px;
-	background-color: #f33c56;
+  background-color: #418cff;
+	border: solid 2px #418cff;
   font-size: 16px;
 	font-weight: 100;
 	text-align: center;
@@ -79,8 +74,8 @@ p {
 
 #settingButton {
   float: left;
-  margin-left: 80px;
-  margin-top: 5px;     /*   */
+  margin-left: 160px;
+  margin-top: 0;     /*   */
   width: 32px;
 	height: 32px;
   margin-right: 38px;
@@ -88,9 +83,25 @@ p {
 }
 
 /* */
-#popPicture {
+#top-bar {
+  float: left;
+  margin-left: 0;
+  margin-top: 0;
+  width: 768px;
+	height: 50px;
+	background-color: #303030;
+}
+#firstGrid {
   float: left;
 }
-#gridPicture {
+#blank {
+  float: left;
+  border-right: 1px;
+  border-color: #ffffff;
+}
+#secondGrid {
+  float: left;
+}
+#thirdGrid {
   float: left;
 }
