@@ -61,7 +61,7 @@ function printCurrentHHMM() {
     var hh = currentTime.getHours();
     var apm = "AM";
     if(hh < 10) {
-      hh = "0" + hh;
+      hh = "0" + "" + hh;
     }
     else if(hh == 12) {
       apm = "PM";
