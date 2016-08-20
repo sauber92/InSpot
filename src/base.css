@@ -164,12 +164,12 @@ p {
 }
 #png {
   margin-left: 50px;
-  margin-top: 6px;
+  margin-top: 5px;
 }
 #p_temp {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 23px;
   float: left;
-  margin-left: 200px;
-  margin-top: -20px;
+  margin-left: 180px;
+  margin-top: -50px;
 }
