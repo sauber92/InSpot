@@ -125,14 +125,14 @@ p {
   color : #2b3464;
 	text-align: right;
   padding-right: 12px;
-  margin-top: 5px;
+  margin-bottom: 5px;
 }
 #currentDate {
   font-size: 50px;
 	font-weight: 100;
 	text-align: right;
   padding-right: 12px;
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 #currentDay {
   font-family: SpoqaHanSans;
@@ -140,12 +140,12 @@ p {
 	font-weight: 100;
 	text-align: right;
   padding-right: 12px;
-  margin-top: 5px;
+  margin-bottom: 5px;
 }
 #currentHHMM {
   font-size: 16px;
 	font-weight: bold;
 	text-align: right;
   padding-right: 12px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
