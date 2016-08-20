@@ -1,12 +1,14 @@
 var currentTime = new Date();
 
 function printCurrentYear() {
+  console.log("Year");
   var yearID = document.getElementById("currentYear");
   var yyyy = currentTime.getFullYear();
   yearID.innerHTML = yyyy;
 }
 
 function printCurrentMonth() {
+  console.log("Month");
   var monthID = document.getElementById("currentMonth");
   var monthName = currentTime.getMonth();
   monthID.innerHTML = monthName;
