@@ -27,7 +27,7 @@ p {
 }
 .temper {
     width: 240px;
-    height: 66px;
+    height: 68px;
     background-color: #47568f;
 }
 .current-time {
@@ -111,4 +111,9 @@ p {
 }
 #thirdGrid {
     /*float: left;*/
+}
+#currentYear {
+  font-size: 16px;
+	font-weight: 100;
+	text-align: right;
 }

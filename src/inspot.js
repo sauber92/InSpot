@@ -5,8 +5,8 @@ var currentTime = new Date();
 function printCurrentYear() {
   console.log("Year");
   var yearID = document.getElementById("currentYear");
-  var yyyy = currentTime.getFullYear();
-  yearID.innerHTML = yyyy;
+  var yearName = currentTime.getFullYear();
+  yearID.innerHTML = yearName;
 }
 
 function printCurrentMonth() {
@@ -16,9 +16,32 @@ function printCurrentMonth() {
   monthID.innerHTML = monthName;
 }
 
+function printCurrentDate() {
+  console.log("Day");
+  var dateID = document.getElementById("currentDate");
+  var dateName = currentTime.getDate();
+  dateID.innerHTML = dateName;
+}
+
+function printCurrentDay() {
+  console.log("Day");
+  var dayID = document.getElementById("currentDay");
+  var dayName = currentTime.getDay();
+  dayID.innerHTML = dayName;
+}
+
+function printCurrentHHMM() {
+  console.log("Day");
+  var hhmmID = document.getElementById("currentHHMM");
+  var hhmmName = currentTime.getDay();
+  hhmmID.innerHTML = hhmmName;
+}
+
 window.onload = function() {                         // 페이지가 로딩되면 실행
   printCurrentYear();
   printCurrentMonth();
+  printCurrentDate();
+  printCurrentDay();
 }
 
 /*
