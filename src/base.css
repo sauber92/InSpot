@@ -19,7 +19,7 @@ p {
 }
 .sentence {
     font-size: 15px;
-    font-weight: 100;
+    font-weight: bold;
     text-align: center;
     color: #f7fb8c;
     -webkit-text-stroke-color: #f7fb8c;
@@ -123,10 +123,19 @@ p {
 	font-weight: bold;
   color : #2b3464;
 	text-align: right;
+  padding-top: -5px;
   padding-right: 12px;
 }
 #currentDate {
   font-size: 50px;
+	font-weight: 100;
+	text-align: right;
+  padding-top: -10px;
+  padding-right: 12px;
+}
+#currentDay {
+  font-family: SpoqaHanSans;
+	font-size: 16px;
 	font-weight: 100;
 	text-align: right;
   padding-right: 12px;

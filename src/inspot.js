@@ -54,9 +54,9 @@ function printCurrentDay() {
 }
 
 function printCurrentHHMM() {
-    console.log("Day");
+    console.log("HHMM");
     var hhmmID = document.getElementById("currentHHMM");
-    var hhmmName = currentTime.getDay();
+    var hhmmName = currentTime.getHours() + ":" + currentTime.getMinutes();
     hhmmID.innerHTML = hhmmName;
 }
 
@@ -65,6 +65,7 @@ window.onload = function() { // 페이지가 로딩되면 실행
     printCurrentMonth();
     printCurrentDate();
     printCurrentDay();
+    printCurrentHHMM();
 }
 
 /*
