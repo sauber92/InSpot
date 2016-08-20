@@ -152,7 +152,7 @@ p {
 #p_name {
   float: left;
   margin-left: 5px;
-  margin-top: 2px;
+  margin-top: 20px;
 }
 #p_clouds {
   float: left;
@@ -161,5 +161,5 @@ p {
 #p_temp {
   float: left;
   margin-left: 20px;
-  margin-top: 3px;
+  margin-top: 30px;
 }
