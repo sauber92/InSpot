@@ -34,7 +34,7 @@ p {
     float: left;
     width: 123px;
     /*123*/
-    height: 189px;
+    height: 187px;
     /* 189*/
     background-color: #c5d5f1;
 }
@@ -91,7 +91,7 @@ p {
 }
 #sentenceBlock {
   width: 370px;
-  height: 50px;
+  height: 48px;
   margin-top: 0;
   padding-top: 12px;
   background-color: #524db0;
