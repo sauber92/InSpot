@@ -18,12 +18,6 @@ p {
     line-height: 22px;
 }
 .sentence {
-    font-size: 10px;
-    font-weight: 100;
-    text-align: center;
-    color: #ffffff;
-}
-.sentence2 {
     font-size: 12px;
     font-weight: 100;
     text-align: center;
@@ -98,6 +92,10 @@ p {
   height: 65px;
   margin-top: 0;
   background-color: ##524db0;
+  font-size: 10px;
+  font-weight: 100;
+  text-align: center;
+  color: #ffffff;
 }
 #blank {
     float: left;
