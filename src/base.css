@@ -43,7 +43,7 @@ p {
 
 #logo {
   float: left;
-  margin-top: 13px;
+  margin-top: 12px;
   margin-left: 31px;
 }
 
@@ -78,7 +78,7 @@ p {
 #settingButton {
   float: left;
   margin-left: 30px;
-  margin-top: 13px;
+  margin-top: 10px;     /*   */
   width: 32px;
 	height: 32px;
   margin-right: 38px;
