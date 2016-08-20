@@ -70,7 +70,7 @@ p {
 #settingButton {
     float: right;
     margin-right: 50px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 /* */
@@ -81,7 +81,7 @@ p {
     margin-top: 0;
     width: 800px;
     height: 50px;
-    background-color: #303030;
+    background-color: #393948;
 }
 #firstGrid {
     float: left;
