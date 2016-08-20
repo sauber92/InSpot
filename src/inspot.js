@@ -15,11 +15,12 @@ function printCurrentMonth() {
   var monthName = currentTime.getMonth();
   monthID.innerHTML = monthName;
 }
-/*
+
 window.onload = function() {                         // 페이지가 로딩되면 실행
-  printCurrentTime();
+  printCurrentYear();
+  printCurrentMonth();
 }
-*/
+
 /*
 document.write('현재 월: ' + (d.getMonth() + 1) + '<br />');
 document.write('현재 일: ' + d.getDate() + '<br />');
