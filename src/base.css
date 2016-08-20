@@ -30,7 +30,7 @@ p {
 
 .sentence {
   width: 370px;
-	height: 70px;
+	height: 65px;
   margin-top: 0px;
 	background-color: #2b3565;
 }
@@ -93,7 +93,7 @@ p {
   float: left;
   margin-left: 0;
   margin-top: 0;
-  width: 770px;
+  width: 800px;
 	height: 50px;
 	background-color: #303030;
 }
