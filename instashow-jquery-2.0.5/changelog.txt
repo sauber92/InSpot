@@ -1,0 +1,218 @@
+# Change log
+
+## July 27, 2016 - Version 2.0.5
+
+### Fixed
+ * Missing photos by hashtags issue
+ * Deleted photo bug
+ * Hashtag uppercase bug
+ * API SSL certificate verification issue
+ * API timeout issue
+ * jQuery 3.X compatibility issue
+ * Bug with comments option in the popup info 
+ 
+
+## June 11, 2016 - Version 2.0.4
+
+### Fixed 
+ * API paths parsing issue
+ 
+### Added
+ * API transport fallback
+  
+
+## June 07, 2016 - Version 2.0.3
+
+### Fixed
+ * Hashtag loading issue
+ * Filter option bug
+
+### Added
+ * Internal API new transport
+ * Old browser prefixes
+
+
+## June 02, 2016 - Version 2.0.2
+
+### Fixed
+ * Hashtags media order bug
+ * Hashtags restriction issue
+ 
+
+## May 31, 2016 - Version 2.0.1
+
+### Fixed
+ * Thumbnails display bug 
+ * Popup deep linking option bug
+ * Needless query param issue 
+ * API trailing slash issue
+
+
+## May 26, 2016 - Version 2.0.0
+
+### Fixed
+ * Repeated images bug
+ * RTL mode bug
+ * Feed loading bug when there is a broken source
+
+### Added
+ * New Instagram API requirements support 
+ 
+
+## April 14, 2016 - Version 1.8.0
+
+### Fixed
+ * Specific image in source option bug
+ * Mobile drag control bug
+ * Not working with mailchimp bug
+ 
+### Changed
+ * Grid calculation
+ * Handlebars updated to 3.0.3
+ 
+### Added
+ * 'instaShowReady' jQuery event
+
+
+## March 29, 2016 - Version 1.7.0
+
+### Fixed
+ * Source uppercase bug
+ * Video in popup starts playing on description click
+ * Popup image width bug
+ * Arrows blinking during loading
+ 
+### Changed
+ * Analytics removed
+ * Second page loading on initialization prevented
+ * Don't show error messages by default
+ * Error messages text
+ * Don't hide video marker in the gallery on media hover
+
+### Added
+ * Loop gallery option
+ * Debug mode
+ * Description links in plain-text converting to HTML tags
+ * Experimental option to support high resolution images (1080x1080)
+ * Gallery arrows active effect
+ 
+
+## February 5, 2016 - Version 1.6.0
+
+### Fixed
+ * Instagram API response data changes issue
+ * Square images fitting bug
+
+### Changed
+ * target="_blank" and rel="nofollow" for all anchors
+
+### Added
+ * Custom templates support
+
+
+## January 8, 2016 - Version 1.5.1
+
+### Fixed
+ * Unexpected data type changing to Object
+
+
+## December 21, 2015 - Version 1.5.0
+
+### Fixed
+ * Arrows in popup disappearing
+ * The widget fell by using jQuery 1.9.1
+
+### Changed
+ * Image loading optimization breakpoints
+ * Handlebars included in package version
+
+### Added
+ * Mode option
+ * Filter option
+ * Play icon on videos in gallery
+ * Defer script loading support
+
+
+## November 26, 2015 - Version 1.4.3
+
+### Fixed
+ * Responsive options sorting breakpoints bug
+ * Internationalization, descriptions and comments special characters bug 
+
+
+## November 22, 2015 - Version 1.4.2
+
+### Fixed
+ * Empty comments array in response from Instagram API bug
+
+### Changed
+ * Option responsive allows url encoded string
+
+
+## November 21, 2015 - Version 1.4.1
+
+### Fixed
+ * Option source specific media shortcode extended characters
+ 
+### Changed
+ * Default value of cacheMediaTime option is decreased to 0
+ 
+
+## November 20, 2015 - Version 1.4.0
+
+### Fixed
+ * Multiple sources images duplication bug
+ 
+### Changed
+ * clientId is deprecated. Use accessToken instead. (More info https://elfsight.com/blog/2015/11/no-more-need-in-instagram-client-id-after-november-17-2015/)
+
+### Added
+ * Images count limit option
+ * Responsive breakpoints option
+ * Images loading optimization
+
+
+## October 29, 2015 - Version 1.3.0
+
+### Fixed
+ * Album-oriented images deformation bug
+ * Over last view translation moving backward bug
+ * Images with different sizes don't fit in popup bug
+ * Gallery transitions glitches
+ 
+### Changed
+ * Gallery layout markup
+ 
+### Added
+ * Access Token support
+ * Set specific image as source or filter
+ * URL as source or filter support
+ * Gallery info dynamic resize
+ * Packaged edition (dependencies free)
+
+
+## October 15, 2015 - Version 1.2.0
+
+### Fixed
+ * Popup animation shaking
+ * @username and #hashtags links in description and comments
+
+### Added
+ * Non-square images support
+ * Popup deep linking
+ * Popup video icon
+ * Media list cache expiry time option
+
+
+## October 04, 2015 - Version 1.1.0
+
+### Fixed
+ * Fade translation animation bug
+ * Touchend popup initiation bug
+
+### Changed
+ * Popup close control for mobile devices
+
+### Added
+ * Analytics
+ * colorPopupMobileControlsBg option

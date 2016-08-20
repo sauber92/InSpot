@@ -1,0 +1,773 @@
+<!-- Elfsight (c) elfsight.com -->
+
+<!-- Elfsight © elfsight.com -->
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaShow Documentation</title>
+
+    <link rel="stylesheet" href="../instashow/jquery.instashow.css">
+    <link rel="stylesheet" href="src/docs.min.css">
+
+    <script src="../vendors/handlebars.runtime.min.js"></script>
+    <script src="../vendors/jquery.min.js"></script>
+    <script src="../instashow/jquery.instashow.js"></script>
+
+    <script src="src/docs.min.js"></script>
+</head>
+
+<body>
+<header class="header container">
+    <div class="row">
+        <div class="medium-12 columns">
+            <h1>Get started with InstaShow 2.0.5</h1>
+
+            <div class="header-social">
+                <a class="icon-facebook icon" href="http://facebook.com/elfsight" target="_blank"></a>
+                <a class="icon-twitter icon" href="http://twitter.com/elfsight" target="_blank"></a>
+                <a class="icon-google-plus icon" href="https://plus.google.com/+Elfsight/" target="_blank"></a>
+                <a class="icon-instagram icon" href="http://instagram.com/elfsight" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="install container">
+    <div class="row">
+        <div class="medium-12 columns">
+            <h2>Installation</h2>
+
+            <p>Learn more about the update 2.0.0 installation in an article <a href="https://elfsight.com/blog/2016/05/install-jquery-instagram-feed-instashow-2-0-0/?utm_source=markets&utm_medium=envato&utm_content=howtoinstall&utm_campaign=ISJQ" target="_blank">How to install InstaShow jQuery 2.0.0</a> of our blog.</p>
+            <br>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="medium-12 columns">
+            <h4>1. Upload InstaShow to your server</h4>
+            <p>Upload the <code>instashow</code> folder to your server.</p>
+
+            <br>
+            <h4>2. Add files to your website</h4>
+            <p><b>There are two ways to do it:</b></p>
+
+            <p>The first one is adding a single packaged file which automatically load all dependencies. <p>If you uploaded the <code>instashow</code> folder to the root directory of your website, the code will look like:</p></p>
+            <pre><code class="html">&lt;script src="/instashow/jquery.instashow.packaged.js"&gt;&lt;/script&gt;</code></pre>
+
+            <p>Another way is adding the all files manually after jQuery and Handlebars (InstaShow requires jQuery 1.7+ and Handlebars 3.0.3):</p>
+            <pre><code class="html">&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.2/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.runtime.min.js"&gt;&lt;/script&gt;
+
+&lt;link href="/instashow/jquery.instashow.min.css" rel="stylesheet"&gt;
+&lt;script src="/instashow/jquery.instashow.min.js"&gt;&lt;/script&gt;</code></pre>
+
+            <p>If you uploaded the folder to another directory, don't forget to set a correct path to the files.</p>
+
+            <br>
+            <h4>3. Initialize the plugin using data-is-* attributes or jQuery plugin</h4>
+            <p><b>Initialization using data-is-* attributes (recommended)</b></p>
+
+            <p>Add InstaShow HTML element to the body section:</p>
+
+			<pre><code class="html">&lt;div data-is
+     data-is-api="/instashow/api/"
+     data-is-source="@muradosmann"
+     data-is-width="auto"
+     data-is-height="500px"
+     data-is-columns="5"
+     data-is-rows="3"
+     data-is-direction="vertical"
+     data-is-lang="en"
+     data-is-popup-info=""&gt;
+&lt;/div&gt;</code></pre>
+
+            <p><b>Initialization as jQuery plugin</b></p>
+            Add InstaShow HTML element:
+
+            <pre><code class="html">&lt;div class="my-instashow"&gt;&lt;/div&gt;</code></pre>
+
+            Initialize InstaShow as jQuery plugin:
+            <pre><code class="html">&lt;script&gt;
+    $('.my-instashow').instaShow({
+        api: '/instashow/api/',
+        source: '@muradosmann',
+        width: 'auto',
+        height: '500px',
+        columns: 5,
+        rows: 3,
+        direction: 'vertical',
+        lang: 'en',
+        popupInfo: ''
+    });
+&lt;/script&gt;</code></pre>
+
+            <b>Note:</b> if you use the packaged script, then you need to use the jQuery initialization code on <code>instaShowReady</code> event:
+
+            <pre><code>&lt;script&gt;
+    window.onInstaShowReady = function() {
+        $('.my-instashow').instaShow({
+            api: '/instashow/api/',
+            source: '@muradosmann',
+            width: 'auto',
+            height: '500px',
+            columns: 5,
+            rows: 3,
+            direction: 'vertical',
+            lang: 'en',
+            popupInfo: ''
+        });
+    };
+&lt;/script&gt;</code></pre>
+
+            <p>If you uploaded the <code>instashow</code> folder to a non-root directory of your website,<br> you need to set a correct path to the <code>/instashow/api/</code> folder in the <code>data-is-api</code> attribute.</p>
+
+            <p><b>Note:</b> This case requires PHP 5.2+ version.</p>
+            <p><b>Note:</b> Be sure that the <code>/instashow/api/</code> directory on your server is writable.</p>
+
+            <br>
+            <h4>API configuration</h4>
+            <p>You can manage some settings of the plugin's API in the <code>config.json</code> file. You can find it in the <code>/instashow/api/</code> folder.</p>
+            <p>There are 4 available options:</p>
+            <ul>
+                <li><b>media_limit</b> allows you to restrict the number of photos which you get from Instagram. The number of photos influences of the plugin performance. We don't recommend you to set more than 100 without real need.</li>
+                <li><b>cache_time</b> defines how often in seconds the plugin requests Instagram and grabs new photos. The option also influences on the plugin loading speed and your server load. We don't recommend you to set less than 3600 seconds.</li>
+                <li><b>allowed_usernames</b> is a security option. You can set the list of available usernames (without '@' symbol) separated by commas to prevent the usage of the plugin by third-parties.</li>
+                <li><b>allowed_tags</b> is a security option. You can set the list of available hashtags (without '#' symbol) separated by commas to prevent the usage of the plugin by third-parties.</li>
+            </ul>
+
+            <br>
+            <h4>If your hosting doesn’t support PHP</h4>
+            <p>If your hosting doesn't support PHP, you need to use Instagram Access Token and the <code>data-is-access-token</code> attribute instead of <code>data-is-api</code> attribute. <b>Note:</b> In this case you can display only the latest 20 images from the username, which was added to Sandbox of Instagram API Console for this Client ID. Please, follow these steps:</p>
+            <ol>
+                <li>Get Instagram Access Token with the help of <a href="https://elfsight.com/blog/2016/05/how-to-get-instagram-access-token/?utm_source=docs&utm_medium=envato&utm_content=howtogetIAT&utm_campaign=ISJQ" target="_blank">this tutorial</a>.</li>
+                <li>Leave the <code>data-is-source</code> attribute empty.</li>
+                <li>Then specify the Access Token to the <code>data-is-access-token</code> attribute.</li>
+            </ol>
+
+            <br>
+            <p><b>Info:</b> dependence on PHP and Instagram access token restrictions are related to Instagram API changes.<br> You can read more about these changes in an article <a href="https://elfsight.com/blog/2016/05/global-update-elfsight-instagram-plugins-2016/?utm_source=markets&utm_medium=envato&utm_content=globalupdate&utm_campaign=ISJQ" target="_blank">Global update of Elfsight Instagram Plugins 2016</a>.</p>
+        </div>
+    </div>
+</section>
+
+<section class="options container">
+    <div class="row">
+        <div class="medium-12 columns">
+            <h2>Options</h2>
+
+            <table class="options-table">
+                <thead>
+                    <tr>
+                        <th>Option</th>
+                        <th>HTML data attribute</th>
+                        <th>Default Value</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>api</td>
+                    <td>data-is-api</td>
+                    <td>&mdash;</td>
+                    <td>URL address to the <code>/instashow/api/</code> folder. InstaShow API requires PHP 5.2+ version. If your hosting doesn't support PHP, use data-is-access-token instead.</td>
+                </tr>
+
+                <tr>
+                    <td class="options-category-title" colspan="4">Source</td>
+                </tr>
+
+                <tr>
+                    <td>source <span class="options-required" title="Required option">*</span></td>
+                    <td>data-is-source</td>
+                    <td>&mdash;</td>
+                    <td>A source list for getting Instagram images.<br>Use the following variants:
+                        <ul>
+                            <li><b>@</b>username - Instagram username</li>
+                            <li><b>#</b>hashtag - Instagram hashtag</li>
+                            <li><b>$</b>shortcode - shortcode of Instagram image. <a href="https://elfsight.com/blog/2015/10/how-to-get-instagram-photo-shortcode/" target="_blank">How to get?</a></li>
+                            <li>URL to Instagram profile, hashtag or specific photo.</li>
+                        </ul>
+                        It’s possible to specify several sources through the gap or separated by commas.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>filterOnly</td>
+                    <td>data-is-filter-only</td>
+                    <td>&mdash;</td>
+                    <td>It allows to filter photos by @username, #hashtag or specific photo. It takes a set of values as listed in source option.</td>
+                </tr>
+
+                <tr>
+                    <td>filterExcept</td>
+                    <td>data-is-filter-except</td>
+                    <td>&mdash;</td>
+                    <td>It allows to exclude specific photos or photos which contain the specified hashtags or which refers to the certain authors. It takes a set of values as listed in source option.</td>
+                </tr>
+
+                <tr>
+                    <td>filter</td>
+                    <td>data-is-filter</td>
+                    <td>&mdash;</td>
+                    <td>It allows to specify custom filter using javascript function or its name.
+                        Using it you can define which images will be shown in gallery.
+                        The function will be applied for each images. If it returns true then image will be shown,
+                        if it returns false - image will be hidden.
+
+                        Note: filter function should be defined in global scope (window object)
+
+                        For example:
+
+                        <pre><code class="html">&lt;script&gt;
+    function myInstaShowFilter(image) {
+        // returns true if filter equals Sutro
+        return image.filter === 'Sutro';
+    }
+&lt;/script&gt;
+
+&lt;div data-is
+     data-is-filter="myInstaShowFilter"
+     data-is-access-token="..."
+     data-is-source="#sunshine"&gt;
+&lt;/div&gt;</code></pre>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>limit</td>
+                    <td>data-is-limit</td>
+                    <td>0</td>
+                    <td>Specify required number to restrict the count of loaded images. Set it "0" to show all available photos.</td>
+                </tr>
+
+                <tr>
+                    <td>cacheMediaTime</td>
+                    <td>data-is-cache-media-time</td>
+                    <td>0</td>
+                    <td>It defines how long the photos will be cached in browsers' localStorage. Set "0" to turn the cache off.</td>
+                </tr>
+
+                <tr>
+                    <td class="options-category-title" colspan="4">Sizes</td>
+                </tr>
+
+                <tr>
+                    <td>width</td>
+                    <td>data-is-width</td>
+                    <td>auto</td>
+                    <td>Widget width (any CSS valid value: px, %, em, etc.). Set "auto" to make the widget responsive.</td>
+                </tr>
+
+                <tr>
+                    <td>height</td>
+                    <td>data-is-height</td>
+                    <td>auto</td>
+                    <td>Widget height (any CSS valid value: px, %, em, etc.). Set "auto" to make height by (in compliance with) the content.</td>
+                </tr>
+
+                <tr>
+                    <td>columns</td>
+                    <td>data-is-columns</td>
+                    <td>4</td>
+                    <td>Number of columns in the grid.</td>
+                </tr>
+
+                <tr>
+                    <td>rows</td>
+                    <td>data-is-rows</td>
+                    <td>2</td>
+                    <td>Number of rows in the grid.</td>
+                </tr>
+
+                <tr>
+                    <td>gutter</td>
+                    <td>data-is-gutter</td>
+                    <td>0</td>
+                    <td>Interval between photos in the grid in pixels.</td>
+                </tr>
+
+                <tr>
+                    <td>responsive</td>
+                    <td>data-is-responsive</td>
+                    <td>null</td>
+                    <td>Accepts Plain Object or JSON string. It overwrites the grid view settings of the widget depending on different window sizes. Use the following format: { "600": { "columns": 3, "rows": 2, "gutter": 10 }}. It means when a window width would be less than or equal to 600px then the number of columns would be set to 3, the number of rows - to 2 and gutter - to 10px. <b>Note:</b> if you specify this option as data-is-responsive attribute, please use single quote ' (data-is-responsive='{ "600": { "columns": 3, "rows": 2, "gutter": 10 }}')</b></td>
+                </tr>
+
+                <tr>
+                    <td class="options-category-title" colspan="4">UI</td>
+                </tr>
+
+                <tr>
+                    <td>direction</td>
+                    <td>data-is-direction</td>
+                    <td>horizontal</td>
+                    <td>Moving direction of gallery’s slides (horizontal or vertical).</td>
+                </tr>
+
+                <tr>
+                    <td>freeMode</td>
+                    <td>data-is-free-mode</td>
+                    <td>false</td>
+                    <td>To switch the gallery in free scroll mode.</td>
+                </tr>
+
+                <tr>
+                    <td>effect</td>
+                    <td>data-is-effect</td>
+                    <td>slide</td>
+                    <td>Slide or fade animation of slide switching.</td>
+                </tr>
+
+                <tr>
+                    <td>speed</td>
+                    <td>data-is-speed</td>
+                    <td>600</td>
+                    <td>Animation speed of slide switching (in ms).</td>
+                </tr>
+
+                <tr>
+                    <td>easing</td>
+                    <td>data-is-easing</td>
+                    <td>ease</td>
+                    <td>Choose animation easing of slide switching.</td>
+                </tr>
+
+                <tr>
+                    <td>arrowsControl</td>
+                    <td>data-is-arrows-control</td>
+                    <td>true</td>
+                    <td>To activate arrows in the gallery.</td>
+                </tr>
+
+                <tr>
+                    <td>scrollControl</td>
+                    <td>data-is-scroll-control</td>
+                    <td>false</td>
+                    <td>To activate scroll in the gallery.</td>
+                </tr>
+
+                <tr>
+                    <td>dragControl</td>
+                    <td>data-is-drag-control</td>
+                    <td>true</td>
+                    <td>To activate drag in the gallery.</td>
+                </tr>
+
+                <tr>
+                    <td>scrollbar</td>
+                    <td>data-is-scrollbar</td>
+                    <td>true</td>
+                    <td>To show scrollbar in the gallery.</td>
+                </tr>
+
+                <tr>
+                    <td>loop</td>
+                    <td>data-is-loop</td>
+                    <td>true</td>
+                    <td>Set "true" to enable infinite gallery sliding.</td>
+                </tr>
+
+                <tr>
+                    <td>auto</td>
+                    <td>data-is-auto</td>
+                    <td>0</td>
+                    <td>Autorotation of slide (in ms). When the function’s value equals to "0" it switches off.</td>
+                </tr>
+
+                <tr>
+                    <td>autoHoverPause</td>
+                    <td>data-is-auto-hover-pause</td>
+                    <td>false</td>
+                    <td>Disabling auto slide switching by pointing at the slider.</td>
+                </tr>
+
+                <tr>
+                    <td>lang</td>
+                    <td>data-is-lang</td>
+                    <td>en</td>
+                    <td>Widget’s UI language. 16 languages support: de, en, es, fr, it, nl, no, pl, pt-BR, sv, tr, ru, hi, ko, zh-HK, ja.</td>
+                </tr>
+
+                <tr>
+                    <td>mode</td>
+                    <td>data-is-mode</td>
+                    <td>popup</td>
+                    <td>Choose the mode of opening photos: in popup ("popup") or in a new browser tab right in Instagram ("instagram").</td>
+                </tr>
+
+                <tr>
+                    <td>info</td>
+                    <td>data-is-info</td>
+                    <td>likesCounter, commentsCounter, description</td>
+                    <td>Image properties, which are displayed in the gallery. The following properties are available: likesCounter – number of likes, commentsCounter – number of comments, description – image description. Set "none" not to display any property.</td>
+                </tr>
+
+                <tr>
+                    <td>popupInfo</td>
+                    <td>data-is-popup-info</td>
+                    <td>username, instagramLink, likesCounter, commentsCounter, location, passedTime, description, comments</td>
+                    <td>Image properties, which are displayed in the popup window. The following properties are available: username, instagramLink, likesCounter, commentsCounter, location, passedTime, description and comments. Set "none" to display only image.</td>
+                </tr>
+
+                <tr>
+                    <td>popupDeepLinking</td>
+                    <td>data-is-popup-deep-linking</td>
+                    <td>false</td>
+                    <td>It changes automatically URL hash by openning any photo in Popup. So you can get the link to the specific photo. The hash will be displayed as #!is{INSTASHOW_INSTANCE_ID}/${MEDIA_ID}.</td>
+                </tr>
+
+                <tr>
+                    <td>popupSpeed</td>
+                    <td>data-is-popup-speed</td>
+                    <td>400</td>
+                    <td>Image scroll speed in popup.</td>
+                </tr>
+
+                <tr>
+                    <td>popupEasing</td>
+                    <td>data-is-popup-easing</td>
+                    <td>ease</td>
+                    <td>Choose animation easing of image scrolling in popup.</td>
+                </tr>
+
+                <tr>
+                    <td>popupHrImages</td>
+                    <td>data-is-popup-hr-images</td>
+                    <td>false</td>
+                    <td>Set "true" to display high resolution images (1080x1080) in popup if them exist. It's an experimental feature because it was implemented using Instagram API functions, which are not documented. We can't guarantee that it will run properly all the time.</td>
+                </tr>
+
+                <tr>
+                    <td class="options-category-title" colspan="4">Style</td>
+                </tr>
+
+                <tr>
+                    <td>colorGalleryBg</td>
+                    <td>data-is-color-gallery-bg</td>
+                    <td>rgba(0, 0, 0, 0)</td>
+                    <td>Gallery background color. It supports any css valid color (hex code, rgb, rgba etc).</td>
+                </tr>
+
+                <tr>
+                    <td>colorGalleryCounters</td>
+                    <td>data-is-color-gallery-counters</td>
+                    <td>rgb(255, 255, 255)</td>
+                    <td>Gallery counters (likes and comments) color.</td>
+                </tr>
+
+                <tr>
+                    <td>colorGalleryDescription</td>
+                    <td>data-is-color-gallery-description</td>
+                    <td>rgb(255, 255, 255)</td>
+                    <td>Gallery description color.</td>
+                </tr>
+
+                <tr>
+                    <td>colorGalleryOverlay</td>
+                    <td>data-is-color-gallery-overlay</td>
+                    <td>rgba(33, 150, 243, 0.9)</td>
+                    <td>Gallery image overlay color</td>
+                </tr>
+
+                <tr>
+                    <td>colorGalleryArrows</td>
+                    <td>data-is-color-gallery-arrows</td>
+                    <td>rgb(0, 142, 255)</td>
+                    <td>Gallery arrows color.</td>
+                </tr>
+
+                <tr>
+                    <td>colorGalleryArrowsHover</td>
+                    <td>data-is-color-gallery-arrows-hover</td>
+                    <td>rgb(37, 181, 255)</td>
+                    <td>Gallery arrows color on hover.</td>
+                </tr>
+
+                <tr>
+                    <td>colorGalleryArrowsBg</td>
+                    <td>data-is-color-gallery-arrows-bg</td>
+                    <td>rgba(255, 255, 255, 0.9)</td>
+                    <td>Gallery arrows background color.</td>
+                </tr>
+
+                <tr>
+                    <td>colorGalleryArrowsBgHover</td>
+                    <td>data-is-color-gallery-arrows-bg-hover</td>
+                    <td>rgb(255, 255, 255)</td>
+                    <td>Gallery arrows background color on hover.</td>
+                </tr>
+
+                <tr>
+                    <td>colorGalleryScrollbar</td>
+                    <td>data-is-color-gallery-scrollbar</td>
+                    <td>rgba(255, 255, 255, 0.5)</td>
+                    <td>Gallery scrollbar color.</td>
+                </tr>
+
+                <tr>
+                    <td>colorGalleryScrollbarSlider</td>
+                    <td>data-is-color-gallery-scrollbar-slider</td>
+                    <td>rgb(68, 68, 68)</td>
+                    <td>Gallery scrollbar slider color.</td>
+                </tr>
+
+                <tr>
+                    <td>colorPopupOverlay</td>
+                    <td>data-is-color-popup-overlay</td>
+                    <td>rgba(43, 43, 43, 0.9)</td>
+                    <td>Popup overlay color.</td>
+                </tr>
+
+                <tr>
+                    <td>colorPopupBg</td>
+                    <td>data-is-color-popup-bg</td>
+                    <td>rgb(255, 255, 255)</td>
+                    <td>Popup background color.</td>
+                </tr>
+
+                <tr>
+                    <td>colorPopupUsername</td>
+                    <td>data-is-color-popup-username</td>
+                    <td>rgb(0, 142, 255)</td>
+                    <td>Popup username text color.</td>
+                </tr>
+
+                <tr>
+                    <td>colorPopupUsernameHover</td>
+                    <td>data-is-color-popup-username-hover</td>
+                    <td>rgb(37, 181, 255)</td>
+                    <td>Popup username text color on hover.</td>
+                </tr>
+
+                <tr>
+                    <td>colorPopupInstagramLink</td>
+                    <td>data-is-color-popup-instagram-link</td>
+                    <td>rgb(0, 142, 255)</td>
+                    <td>Popup Instagram link button color.</td>
+                </tr>
+
+                <tr>
+                    <td>colorPopupInstagramLinkHover</td>
+                    <td>data-is-color-popup-instagram-link-hover</td>
+                    <td>rgb(37, 181, 255)</td>
+                    <td>Popup Instagram link button color on hover.</td>
+                </tr>
+
+                <tr>
+                    <td>colorPopupCounters</td>
+                    <td>data-is-color-popup-counters</td>
+                    <td>rgb(0, 0, 0)</td>
+                    <td>Popup counters (likes and comments) color.</td>
+                </tr>
+
+                <tr>
+                    <td>colorPopupPassedTime</td>
+                    <td>data-is-color-popup-passed-time</td>
+                    <td>rgb(152, 152, 152)</td>
+                    <td>Popup passed time text color.</td>
+                </tr>
+
+                <tr>
+                    <td>colorPopupAnchor</td>
+                    <td>data-is-color-popup-anchor</td>
+                    <td>rgb(0, 142, 255)</td>
+                    <td>Popup anchors color.</td>
+                </tr>
+
+                <tr>
+                    <td>colorPopupAnchorHover</td>
+                    <td>data-is-color-popup-anchor-hover</td>
+                    <td>rgb(37, 181, 255)</td>
+                    <td>Popup anchors color on hover.</td>
+                </tr>
+
+                <tr>
+                    <td>colorPopupText</td>
+                    <td>data-is-color-popup-text</td>
+                    <td>rgb(0, 0, 0)</td>
+                    <td>Popup text color.</td>
+                </tr>
+
+                <tr>
+                    <td>colorPopupControls</td>
+                    <td>data-is-color-popup-controls</td>
+                    <td>rgb(103, 103, 103)</td>
+                    <td>Popup controls (arrows and close) color.</td>
+                </tr>
+
+                <tr>
+                    <td>colorPopupControlsHover</td>
+                    <td>data-is-color-popup-controls-hover</td>
+                    <td>rgb(255, 255, 255)</td>
+                    <td>Popup controls color on hover.</td>
+                </tr>
+
+                <tr>
+                    <td>colorPopupMobileControls</td>
+                    <td>data-is-color-popup-mobile-controls</td>
+                    <td>rgb(103, 103, 103)</td>
+                    <td>Popup mobile controls (close) color.</td>
+                </tr>
+
+                <tr>
+                    <td>colorPopupMobileControlsBg</td>
+                    <td>data-is-color-popup-mobile-controls-bg</td>
+                    <td>rgba(255, 255, 255, 0.8)</td>
+                    <td>Popup mobile controls (close) background color.</td>
+                </tr>
+
+                <tr>
+                    <td class="options-category-title" colspan="4">Custom Templates</td>
+                </tr>
+
+                <tr>
+                    <td>tplGalleryWrapper</td>
+                    <td>data-is-tpl-gallery-wrapper</td>
+                    <td>null</td>
+                    <td>Template id of the gallery wrapper.</td>
+                </tr>
+
+                <tr>
+                    <td>tplGalleryView</td>
+                    <td>data-is-tpl-gallery-view</td>
+                    <td>null</td>
+                    <td>Template id of the gallery view (slide).</td>
+                </tr>
+
+                <tr>
+                    <td>tplGalleryMedia</td>
+                    <td>data-is-tpl-gallery-media</td>
+                    <td>null</td>
+                    <td>Template id of the gallery media (image in the gallery).</td>
+                </tr>
+
+                <tr>
+                    <td>tplGalleryInfo</td>
+                    <td>data-is-tpl-gallery-info</td>
+                    <td>null</td>
+                    <td>Template id of the gallery media info (Description and counters for each image).</td>
+                </tr>
+
+                <tr>
+                    <td>tplGalleryCounter</td>
+                    <td>data-is-tpl-gallery-counter</td>
+                    <td>null</td>
+                    <td>Template id of the gallery media counter (It works when only one counter is specified as info).</td>
+                </tr>
+
+                <tr>
+                    <td>tplGalleryCover</td>
+                    <td>data-is-tpl-gallery-cover</td>
+                    <td>null</td>
+                    <td>Template id of the gallery media hover cover.</td>
+                </tr>
+
+                <tr>
+                    <td>tplGalleryArrows</td>
+                    <td>data-is-tpl-gallery-arrows</td>
+                    <td>null</td>
+                    <td>Template id of the gallery arrows control.</td>
+                </tr>
+
+                <tr>
+                    <td>tplGalleryScroll</td>
+                    <td>data-is-tpl-gallery-scroll</td>
+                    <td>null</td>
+                    <td>Template id of the gallery scrollbar.</td>
+                </tr>
+
+                <tr>
+                    <td>tplGalleryLoader</td>
+                    <td>data-is-tpl-gallery-loader</td>
+                    <td>null</td>
+                    <td>Template id of the gallery loader.</td>
+                </tr>
+
+                <tr>
+                    <td>tplPopupRoot</td>
+                    <td>data-is-tpl-popup-root</td>
+                    <td>null</td>
+                    <td>Template id of the popup root element.</td>
+                </tr>
+
+                <tr>
+                    <td>tplPopupTwilight</td>
+                    <td>data-is-tpl-popup-twilight</td>
+                    <td>null</td>
+                    <td>Template id of the popup twilight (popup background overlay).</td>
+                </tr>
+
+                <tr>
+                    <td>tplPopupMedia</td>
+                    <td>data-is-tpl-popup-media</td>
+                    <td>null</td>
+                    <td>Template id of the popup media and its info.</td>
+                </tr>
+
+                <tr>
+                    <td class="options-category-title" colspan="4">Other</td>
+                </tr>
+
+                <tr>
+                    <td>accessToken</td>
+                    <td>data-is-access-token</td>
+                    <td>&mdash;</td>
+                    <td>If your hosting doesn't support PHP, you need to use this option instead of data-is-api. You can get Instagram Access Token with the help of <a href="https://elfsight.com/blog/2016/05/how-to-get-instagram-access-token/?utm_source=docs&utm_medium=envato&utm_content=howtogetIAT&utm_campaign=ISJQ" target="_blank">this tutorial</a>. <b>Note:</b> In this case you can display only the latest 20 images from the username, which was added to Sandbox of Instagram API Console for Instagram Client ID.</td>
+                </tr>
+
+                <tr>
+                    <td>debug</td>
+                    <td>data-is-debug</td>
+                    <td>false</td>
+                    <td>Set "true" to display error messages.</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="example container">
+    <div class="row">
+        <div class="medium-12 columns">
+            <h2>Example</h2>
+
+            <div data-is data-is-access-token="789617263.ca52b37.ab20907bf50c4693b3da6ad1a010d868"></div>
+
+            <br><br>
+            <p>Congratulations! You have successfully installed your InstaShow.</p>
+        </div>
+    </div>
+</section>
+
+<section class="support container">
+    <div class="row">
+        <div class="medium-12 columns">
+            <h2>Support, questions and offers</h2>
+
+            <p>Incoming issues and queries are taken care of in 24-36 hours in order of receiving.</p>
+
+            <a href="https://elfsight.ticksy.com/submit/#product100003624" target="_blank">
+                <span>Visit Support Center</span>
+            </a>
+            <br><br>
+        </div>
+    </div>
+</section>
+
+<footer class="footer container">
+    <div class="row">
+        <div class="medium-12 columns">
+            <h2>Keep in Touch</h2>
+            <a class="icon-facebook icon" href="http://facebook.com/elfsight" target="_blank"></a>
+            <a class="icon-twitter icon" href="http://twitter.com/elfsight" target="_blank"></a>
+            <a class="icon-google-plus icon" href="https://plus.google.com/+Elfsight/" target="_blank"></a>
+            <a class="icon-instagram icon" href="http://instagram.com/elfsight" target="_blank"></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
