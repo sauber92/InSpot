@@ -101,7 +101,7 @@ p {
   color: #ffffff;
   -webkit-text-stroke-color: #ffffff;
   -webkit-text-stroke-width: 0.5px;
-  line-height: 5px;
+  line-height: 15px;
 }
 #blank {
     float: left;
