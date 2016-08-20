@@ -26,6 +26,7 @@ p {
     -webkit-text-stroke-width: 0;
 }
 .temper {
+    float: left;
     width: 240px;
     height: 68px;
     background-color: #47568f;
