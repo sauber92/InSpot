@@ -1,113 +1,97 @@
 html {
-  height: 100%;
+    height: 100%;
 }
 body {
-  position: relative;
-  padding: 0;
-  font-family: 'Spoqa Han Sans', 'Sans-serif';
-  font-size: 30px;
-  overflow: hidden;
+    position: relative;
+    padding: 0;
+    font-family: 'Spoqa Han Sans', 'Sans-serif';
+    font-size: 30px;
+    overflow: hidden;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-family: 'Spoqa Han Sans', 'Sans-serif';
-  font-weight: 300;
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Spoqa Han Sans', 'Sans-serif';
+    font-weight: 300;
 }
 p {
-  font-size: 13px;
-  line-height: 22px;
+    font-size: 13px;
+    line-height: 22px;
 }
-
 .sentence {
-  width: 370px;
-	height: 65px;
-  margin-top: 0px;
-	background-color: #2b3565;
+    width: 370px;
+    height: 65px;
+    margin-top: 0px;
+    background-color: #2b3565;
 }
-
 .temper {
-  width: 245px;
-	height: 50px;
-	background-color: #47568f;
+    width: 246px;
+    height: 66px;
+    background-color: #47568f;
 }
-
 .current-time {
-  float: left;
-  width: 120px;
-	height: 170px;
-	background-color: #c5d5f1;
+    float: left;
+    width: 123px;
+    height: 189px;
+    background-color: #c5d5f1;
 }
-
 #logo {
-  float: left;
-  margin-top: 10px;
-  margin-left: 31px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 31px;
 }
-
 #placeTag {
-  float: left;
-  margin-left: 70px;
-  margin-top: 13px;
-  width: 85px;
-	height: 24px;
-	border-radius: 12px;
-	border: solid 2px #418cff;
-  font-size: 16px;
-	font-weight: 100;
-	text-align: center;
-	color: #fffffe;
+    float: left;
+    margin-left: 70px;
+    margin-top: 13px;
+    width: 85px;
+    height: 24px;
+    border-radius: 12px;
+    border: solid 2px #418cff;
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+    color: #fffffe;
 }
-
 #inspotTag {
-  float: left;
-  margin-left: 10px;
-  margin-top: 13px;
-  width: 85px;
-	height: 24px;
-	border-radius: 12px;
-	border: solid 2px #418cff;
-  font-size: 16px;
-	font-weight: 100;
-	text-align: center;
-	color: #fffffe;
+    float: left;
+    margin-left: 10px;
+    margin-top: 13px;
+    width: 85px;
+    height: 24px;
+    border-radius: 12px;
+    border: solid 2px #418cff;
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+    color: #fffffe;
 }
-
 #settingButton {
-  float: right;
-  margin-right: 50px;
-  margin-top: 15px;     /*   */
+    float: right;
+    margin-right: 50px;
+    margin-top: 15px;
+    /*   */
 }
 
 /* */
+
 #top-bar {
-  float: left;
-  margin-left: 0;
-  margin-top: 0;
-  width: 800px;
-	height: 50px;
-	background-color: #303030;
+    float: left;
+    margin-left: 0;
+    margin-top: 0;
+    width: 800px;
+    height: 50px;
+    background-color: #303030;
 }
 #firstGrid {
-  float: left;
-  margin-left: 15px;
+    float: left;
+    margin-left: 15px;
 }
 #blank {
-  float: left;
-  border-right: solid 1px #ffffff;
+    float: left;
+    border-right: solid 1px #ffffff;
 }
 #secondGrid {
-  float: left;
+    float: left;
 }
 #thirdGrid {
-  float: left;
+    float: left;
 }
