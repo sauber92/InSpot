@@ -92,6 +92,13 @@ function logoButtonEvent() {
   }
 }
 
+function eggButtonEvent() {
+  var eggButton = document.getElementById("inspotTag");
+  eggButton.onclick = function() {
+    alert("2016 K-ICT 디바이스톤. 정준영 박대희 한희영");
+  }
+}
+
 window.onload = function() {
     printCurrentYear();
     printCurrentMonth();
@@ -100,4 +107,5 @@ window.onload = function() {
     printCurrentHHMM();
     settingButtonEvent();
     logoButtonEvent();
+    eggButtonEvent();
 }
