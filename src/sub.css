@@ -1,8 +1,11 @@
+.contents {
+  margin-top: 50px;
+  margin-left: 150px;
+}
+
 #inspotPlace {
   width: 300px;
   height: 50px;
-  margin-top: 200px;
-  margin-left: 150px;
   border-radius: 12px;
   border: solid 2px #418cff;
   font-size: 16px;
@@ -11,7 +14,6 @@
 #inspotHome {
   width: 300px;
   height: 50px;
-  margin-left: 150px;
   border-radius: 12px;
   border: solid 2px #418cff;
   font-size: 16px;
