@@ -83,18 +83,27 @@
 						var f_clouds;
 
 						$.ajax({
+							console.log("ajax start ===>");
 							url: apiURL,
 							dataType: "json",
 							type: "GET",
 							async: "false",
 							success: function(forecast) {
+								console.log("function success!");
 								f_name = forecast.name;
+								console.log("name success!");
 								f_temp = (forecast.main.temp-273.15).toFixed(0);
+								console.log("clouds success!");
 								f_weather = forecast.weather[0].id;
+								console.log("weather success!");
 								f_clouds = forecast.clouds.all;
+								console.log("clouds success!");
 								n_name.replaceData(0, 10, f_name);
+								console.log("name change success!");
 								n_clouds.replaceData(4, 2, f_clouds);
+								console.log("clouds change success!");
 								n_temp.replaceData(0, 2, f_temp);
+								console.log("temp change success!");
 
 								if(f_weather == 800) {
 									document.getElementById("png").src="/src/img/clearsky.png";
