@@ -150,7 +150,7 @@ p {
   margin-top: 10px;
 }
 #p_name {
-  position: relative;
+  position: absolute;
   font-size: 16px;
   text-align: left;
   float: left;
