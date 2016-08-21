@@ -149,33 +149,3 @@ p {
   padding-right: 12px;
   margin-top: 10px;
 }
-#p_name {
-  color: #ffffff;
-  font-size: 16px;
-  float: left;
-  margin-top: 20px;
-  margin-left: 30px;
-}
-#p_clouds {
-  color: #ffffff;
-  font-size: 16px;
-  margin-top: 2px;
-  margin-left: 30px;
-}
-#png {
-  float: left;
-  margin-top: 3px;
-  margin-left: 40px;
-  height : 64px;
-  width : 64px;
-}
-#p_temp {
-  color: #ffffff;
-  font-size: 25px;
-  float: left;
-  margin-top: -29px;
-  margin-left: 170px;
-  float: left;
-  margin-left: 20px;
-  margin-top: 30px;
-}
