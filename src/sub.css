@@ -18,10 +18,12 @@ p {
     line-height: 3px;
 }
 #top-bar2 {
-    float: left;
-    width: 800px;
-    height: 50px;
-    background-color: #393948;
+  float: left;
+  margin-left: 0;
+  margin-top: 0;
+  width: 800px;
+  height: 50px;
+  background-color: #393948;
 }
 #logo2 {
     float: left;
