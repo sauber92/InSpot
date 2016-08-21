@@ -81,7 +81,7 @@ function printCurrentHHMM() {
 function settingButtonEvent() {
   var settingButton = document.getElementById("settingButton");
   settingButton.onclick = function() {
-    location.replace("../setting.php");
+    location.replace("../setting.html");
   }
 }
 
