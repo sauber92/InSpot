@@ -88,7 +88,7 @@ function settingButtonEvent() {
 function logoButtonEvent() {
   var logoButton = document.getElementById("logo");
   logoButton.onclick = function() {
-    location.replace("../index.html");
+    location.replace("index.html");
   }
 }
 

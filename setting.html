@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
 	<title>Setting</title>
 	<meta charset="utf-8">
@@ -13,10 +14,10 @@
 			<input type="image" id="logo" style="height:50px;width:auto;" src="/src/img/logo.png" />
 			<input type="image" id="settingButton" style="height:24px;width:24px;" src="/src/img/btn-settings.png" />
 	</div>
-</body>
 
-$user_id = $_SESSION['user_id'];
-$user_name = $_SESSION['user_name'];
-echo "<p>안녕하세요. $user_name($user_id)님</p>";
-echo "<p><a href='logout.php'>로그아웃</a></p>";
-?>
+	<div>
+			<input type="text" id="inspotPlace" style="width: 500px;height:auto;" value="#경복궁" /> </br>
+		</br>
+			<input type="text" id="inspotPlace" style="width: 500px;height:auto;" value="#경복궁" />
+	</div>
+</body>
