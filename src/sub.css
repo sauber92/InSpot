@@ -1,7 +1,7 @@
 #inspotPlace {
   width: 300px;
   height: 50px;
-  margin-top: 300px;
+  margin-top: 200px;
   margin-left: 150px;
   border-radius: 12px;
   border: solid 2px #418cff;
@@ -17,17 +17,31 @@
   font-size: 16px;
   font-weight: 100;
 }
-#buttonPlace {
+#button1 {
   width: 10px;
   height: 50px;
   border-radius: 12px;
   background-color: #418cff;
   color : #ffffff;
 }
-#buttonHome {
+#button2 {
   width: 10px;
   height: 50px;
   border-radius: 12px;
   background-color: #418cff;
   color : #ffffff;
+}
+#word {
+  font-size: 20px;
+  font-weight: bold;
+  color: #303030;
+  -webkit-text-stroke-color: #303030;
+  -webkit-text-stroke-width: 1;
+}
+#bold {
+  font-size: 20px;
+  font-weight: bold;
+  color: #418cff;
+  -webkit-text-stroke-color: #418cff;
+  -webkit-text-stroke-width: 1;
 }
