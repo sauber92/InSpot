@@ -90,7 +90,7 @@
           					url: apiURI ,        //요청하는 곳의 주소
           					dataType: "json",    //리턴되어지는 데이터 타입
           					type: "GET",
-						async: "false",
+										async: "false",
           					success: function(forecast) {//값 가져오는데 성공시 실햄함  resp에는 리턴되어지는 데이터가 담겨있음
             						f_name = forecast.name;
             						f_temp=(forecast.main.temp-273.15).toFixed(0);
