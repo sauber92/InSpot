@@ -8,6 +8,16 @@
     height: 50px;
     background-color: #393948;
 }
+#logo2 {
+    float: left;
+    margin-top: 4px;
+    margin-left: 31px;
+}
+#settingButton2 {
+    float: right;
+    margin-right: 50px;
+    margin-top: 13px;
+}
 
 #placeWord {
   margin-left: 145px;
@@ -20,6 +30,7 @@
 }
 .placeContents {
   margin-left: 150px;
+  margin-top: 10px;
 }
 #homeWord {
   margin-left: 145px;
