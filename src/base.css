@@ -155,7 +155,10 @@ p {
   margin-left: 3px;
 }
 #p_clouds {
-  float: left;
+  float: bottom;
   color: #ffffff;
   margin-left: 3px;
+}
+#png {
+  float: left;
 }
