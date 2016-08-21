@@ -90,7 +90,7 @@ function getWeather() {
   var f_clouds;
 
   $.ajax({
-    console.log("ajax start ===>");
+    
     url: apiURL,
     dataType: "json",
     type: "GET",
