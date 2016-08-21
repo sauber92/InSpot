@@ -153,18 +153,19 @@ p {
   color: #ffffff;
   font-size: 16px;
   float: left;
-  margin-left: 30px;
   margin-top: 20px;
+  margin-left: 30px;
 }
 #p_clouds {
   color: #ffffff;
   font-size: 16px;
-  margin-top: -25px;
+  margin-top: 25px;
   margin-left: 30px;
 }
 #png {
+  float: left;
+  margin-top: 3px;
   margin-left: 40px;
-  margin-top: 5px;
   height : 64px;
   width : 64px;
 }
@@ -172,6 +173,6 @@ p {
   color: #ffffff;
   font-size: 25px;
   float: left;
-  margin-left: 170px;
   margin-top: -29px;
+  margin-left: 170px;
 }
