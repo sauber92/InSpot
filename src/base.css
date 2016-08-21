@@ -155,6 +155,7 @@ p {
   text-align: left;
   float: left;
   color: #ffffff;
+  margin-top: auto;
   margin-left: 8px;
 }
 #p_clouds {
@@ -167,10 +168,12 @@ p {
 }
 #png {
   position: absolute;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 #p_temp {
   position: absolute;
-  margin-top: auto;
-  margin-left: 50px;
+  margin-top: 40px;
+  margin-left: 1500px;
+  font-size: 30px;
+  color: #ffffff;
 }
