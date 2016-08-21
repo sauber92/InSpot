@@ -1,23 +1,18 @@
-function settingButtonEvent() {
-  var settingButton2 = document.getElementById("settingButton");
+function settingButtonEvent2() {
+  var settingButton2 = document.getElementById("settingButton2");
   settingButton.onclick = function() {
     location.replace("setting.html");
   }
 }
 
-function logoButtonEvent() {
-  var logoButton2 = document.getElementById("logo");
+function logoButtonEvent2() {
+  var logoButton2 = document.getElementById("logo2");
   logoButton.onclick = function() {
-    location.replace("index.html");
+    location.replace("../index.html");
   }
 }
 
 window.onload = function() {
-    printCurrentYear();
-    printCurrentMonth();
-    printCurrentDate();
-    printCurrentDay();
-    printCurrentHHMM();
-    settingButtonEvent();
-    logoButtonEvent();
+    settingButtonEvent2();
+    logoButtonEvent2();
 }
