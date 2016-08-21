@@ -153,12 +153,13 @@ p {
     color: #ffffff;
     float: left;
     font-size: 13px;
-    margin-top: 25px;
+    margin-top: 22px;
     margin-left: 10px;
 }
 #p_temp {
   color: #ffffff;
     float: right;
+    margin-right: 10px;
 }
 #p_clouds {
   color: #ffffff;
