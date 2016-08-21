@@ -88,7 +88,7 @@ function settingButtonEvent() {
 function logoButtonEvent() {
   var logoButton = document.getElementById("logo");
   logoButton.onclick = function() {
-    location.replace("163.180.142.81");
+    location.href="163.180.142.81";
   }
 }
 
