@@ -155,21 +155,22 @@ p {
   text-align: left;
   float: left;
   color: #ffffff;
-  margin-left: 5px;
+  margin-left: 8px;
 }
 #p_clouds {
   position: absolute;
   font-size: 16px;
   text-align: left;
   color: #ffffff;
-  margin-top: 30px;
-  margin-left: 5px;
+  margin-top: 35px;
+  margin-left: 8px;
 }
 #png {
   position: absolute;
-
+  margin-left: 20px;
 }
 #p_temp {
   position: absolute;
-
+  margin-top: auto;
+  margin-left: 50px;
 }
