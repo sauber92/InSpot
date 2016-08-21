@@ -48,8 +48,8 @@ p {
 }
 .placeContents {
   margin-left: 150px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 100px;
 }
 #homeWord {
   margin-left: 145px;
@@ -61,7 +61,7 @@ p {
   -webkit-text-stroke-width: 1;
 }
 .homeContents {
-  margin-top: 10px;
+  margin-top: 0;
   margin-left: 150px;
 }
 
