@@ -150,13 +150,17 @@ p {
   margin-top: 10px;
 }
 #p_name {
+  font-size: 16px;
+  text-align: left;
   float: left;
   color: #ffffff;
   margin-left: 3px;
 }
 #p_clouds {
-  float: bottom;
+  font-size: 16px;
+  text-align: left;
   color: #ffffff;
+  margin-top: 3px;
   margin-left: 3px;
 }
 #png {
