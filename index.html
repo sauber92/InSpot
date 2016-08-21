@@ -6,7 +6,7 @@
 	<link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
 	<link href="/src/base.css" rel="stylesheet" />
 	<script type="text/javascript" src="/src/inspot.js"></script>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 
 <body>
@@ -65,10 +65,58 @@
 		</div>
 
 		<div class="temper">
+
 			<p id="p_name">HEY</p>
-			<p id="p_clouds">강수량 99%</p>
-			<img src="/src/img/clearsky.png" id="png">
-			<p id="p_temp">50℃</p>
+			<img src="src/img/clearsky.png" id=png height="64" width="64">
+
+			<p id="p_clouds">강수랑 50% </p>
+			<p id="p_temp">30℃</p>
+
+
+
+			<script>
+				var n_name = document.getElementById('p_name').firstChild;
+				var n_clouds = document.getElementById('p_clouds').firstChild;
+				var n_temp = document.getElementById('p_temp').firstChild;
+
+
+     				function getWeather() {
+        				var apiURI = "http://api.openweathermap.org/data/2.5/weather?q=Seoul&APPID=e42202e66f1f003b5aa38a48f7ddbb87";
+        				var f_name;
+        				var f_temp;
+        				var f_weather;//날씨 값 지표 맑은날:800 반맑음:700번대 구름:800번대(800번제외) 비:200번대 300번대 500번대
+        				var f_clouds;
+        				$.ajax({
+          					url: apiURI ,        //요청하는 곳의 주소
+          					dataType: "json",    //리턴되어지는 데이터 타입
+          					type: "GET",
+						async: "false",
+          					success: function(forecast) {//값 가져오는데 성공시 실햄함  resp에는 리턴되어지는 데이터가 담겨있음
+            						f_name = forecast.name;
+            						f_temp=(forecast.main.temp-273.15).toFixed(0);
+	      	    					f_weather=forecast.weather[0].id;
+	       	   					f_clouds=forecast.clouds.all;
+	         					//alert("weather");
+							n_name.replaceData(0,10,f_name);
+							n_clouds.replaceData(4,2,f_clouds);
+							n_temp.replaceData(0,2,f_temp);
+							if(f_weather==800){document.getElementById('png').src="src/img/clearsky.png";}
+							else if(700<=f_weather<800){document.getElementById('png').src="src/img/fewclouds.png";}
+							else if(800<f_weather<900){document.getElementById('png').src="src/img/clouds.png";}
+							else {document.getElementById('png').src="src/img/rain.png";}
+
+	         				},
+          					error: function(forecast) {
+            						alert("Error: " + e);
+            						clearInterval(updateinter);
+          					}
+
+        				});
+      				}
+				getWeather();
+			</script>
+
+
 		</div>
 
 		<div data-is data-is-api="/instashow/api/"
