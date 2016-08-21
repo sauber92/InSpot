@@ -149,3 +149,8 @@ p {
   padding-right: 12px;
   margin-top: 10px;
 }
+#p_name {
+  float: left;
+  color: #ffffff;
+  margin-left: 3px;
+}
