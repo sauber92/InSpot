@@ -159,13 +159,14 @@ p {
 #p_temp {
     color: #ffffff;
     float: right;
-    font-size: 20px;
-    margin-right: 10px;
+    font-size: 25px;
+    margin-right: 20px;
+    margin-top: 10px;
 }
 #p_clouds {
     color: #ffffff;
     float: left;
     padding: 10px;
     margin-top: 32px;
-    margin-left: -50px;
+    margin-left: -45px;
 }
