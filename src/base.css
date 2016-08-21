@@ -17,6 +17,8 @@ p {
     font-size: 13px;
     line-height: 3px;
 }
+a.no-uline { text-decoration:none }
+
 .sentence {
     font-size: 15px;
     font-weight: bold;
