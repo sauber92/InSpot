@@ -78,10 +78,26 @@ function printCurrentHHMM() {
     hhmmID.innerHTML = hhmmName;
 }
 
-window.onload = function() { // 페이지가 로딩되면 실행
+function settingButtonEvent() {
+  var settingButton = document.getElementById("settingButton");
+  settingButton.onclick = function() {
+    location.replace("../setting.php");
+  }
+}
+
+function logoButtonEvent() {
+  var logoButton = document.getElementById("logo");
+  logoButton.onclick = function() {
+    location.replace("../index.html");
+  }
+}
+
+window.onload = function() {
     printCurrentYear();
     printCurrentMonth();
     printCurrentDate();
     printCurrentDay();
     printCurrentHHMM();
+    settingButtonEvent();
+    logoButtonEvent();
 }
