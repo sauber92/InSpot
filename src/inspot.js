@@ -81,14 +81,14 @@ function printCurrentHHMM() {
 function settingButtonEvent() {
   var settingButton = document.getElementById("settingButton");
   settingButton.onclick = function() {
-    location.replace("../setting.html");
+    location.replace("/var/www/html/setting.html");
   }
 }
 
 function logoButtonEvent() {
   var logoButton = document.getElementById("logo");
   logoButton.onclick = function() {
-    location.href="163.180.142.81";
+    location.replace("/var/www/html/index.html");
   }
 }
 
