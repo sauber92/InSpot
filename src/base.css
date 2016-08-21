@@ -90,18 +90,18 @@ p {
     margin-left: 30px;
 }
 #sentenceBlock {
-  width: 370px;
-  height: 47px;
-  margin-top: 0;
-  padding-top: 12px;
-  background-color: #524db0;
-  font-size: 14px;
-  font-weight: 100;
-  text-align: center;
-  color: #ffffff;
-  -webkit-text-stroke-color: #ffffff;
-  -webkit-text-stroke-width: 0.5px;
-  line-height: 16px;
+    width: 370px;
+    height: 47px;
+    margin-top: 0;
+    padding-top: 12px;
+    background-color: #524db0;
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+    color: #ffffff;
+    -webkit-text-stroke-color: #ffffff;
+    -webkit-text-stroke-width: 0.5px;
+    line-height: 16px;
 }
 #blank {
     float: left;
@@ -114,48 +114,51 @@ p {
     /*float: left;*/
 }
 #currentYear {
-  font-size: 16px;
-	font-weight: 100;
-	text-align: right;
-  padding-right: 12px;
-  margin-top: 20px;
+    font-size: 16px;
+    font-weight: 100;
+    text-align: right;
+    padding-right: 12px;
+    margin-top: 20px;
 }
 #currentMonth {
-  font-size: 16px;
-	font-weight: bold;
-  color : #2b3464;
-	text-align: right;
-  padding-right: 12px;
-  margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2b3464;
+    text-align: right;
+    padding-right: 12px;
+    margin-top: 5px;
 }
 #currentDate {
-  font-size: 50px;
-	font-weight: 100;
-	text-align: right;
-  padding-right: 12px;
-  margin-top: 51px;
+    font-size: 50px;
+    font-weight: 100;
+    text-align: right;
+    padding-right: 12px;
+    margin-top: 51px;
 }
 #currentDay {
-	font-size: 16px;
-	font-weight: 100;
-	text-align: right;
-  padding-right: 12px;
-  margin-top: 5px;
+    font-size: 16px;
+    font-weight: 100;
+    text-align: right;
+    padding-right: 12px;
+    margin-top: 5px;
 }
 #currentHHMM {
-  font-size: 16px;
-	font-weight: bold;
-	text-align: right;
-  padding-right: 12px;
-  margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 12px;
+    margin-top: 10px;
 }
-#p_name{
-float: left;
+#p_name {
+    color: #ffffff;
+    float: left;
 }
-#p_temp{
-float: right;
+#p_temp {
+  color: #ffffff;
+    float: right;
 }
-#p_clouds{
-float: left;
-padding: 10px;
+#p_clouds {
+  color: #ffffff;
+    float: left;
+    padding: 10px;
 }
