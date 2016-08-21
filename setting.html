@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<meta charset="utf-8" />
-<?php
 <head>
 	<title>Setting</title>
 	<meta charset="utf-8">
@@ -9,7 +7,7 @@
 	<script type="text/javascript" src="/src/inspot.js"></script>
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
-
+<?php
 <body>
 	<div id="top-bar">
 			<input type="image" id="logo" style="height:50px;width:auto;" src="/src/img/logo.png" />
@@ -17,12 +15,6 @@
 	</div>
 </body>
 
-
-session_start();
-if(!isset($_SESSION['user_id']) || !isset($_SESSION['user_name'])) {
-	echo "<meta http-equiv='refresh' content='0;url=login.php'>";
-	exit;
-}
 $user_id = $_SESSION['user_id'];
 $user_name = $_SESSION['user_name'];
 echo "<p>안녕하세요. $user_name($user_id)님</p>";
