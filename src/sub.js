@@ -1,12 +1,12 @@
 function settingButtonEvent() {
-  var settingButton = document.getElementById("settingButton");
+  var settingButton2 = document.getElementById("settingButton");
   settingButton.onclick = function() {
     location.replace("setting.html");
   }
 }
 
 function logoButtonEvent() {
-  var logoButton = document.getElementById("logo");
+  var logoButton2 = document.getElementById("logo");
   logoButton.onclick = function() {
     location.replace("index.html");
   }

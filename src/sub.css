@@ -1,5 +1,16 @@
+#top-bar2 {
+    float: left;
+    margin-left: 0;
+    margin-top: 0;
+    padding-left: 0;
+    padding-top: 0;
+    width: 800px;
+    height: 50px;
+    background-color: #393948;
+}
+
 #placeWord {
-  margin-left: -5px;
+  margin-left: 145px;
   margin-top: 50px;
   font-size: 20px;
   font-weight: 100;
@@ -11,7 +22,7 @@
   margin-left: 150px;
 }
 #homeWord {
-  margin-left: -5px;
+  margin-left: 145px;
   margin-top: 10px;
   font-size: 20px;
   font-weight: 100;
