@@ -1,10 +1,24 @@
-
-.placeContents {
-  float: left;
+#placeWord {
+  margin-left: -5px;
   margin-top: 50px;
+  font-size: 20px;
+  font-weight: 100;
+  color: #303030;
+  -webkit-text-stroke-color: #303030;
+  -webkit-text-stroke-width: 1;
+}
+.placeContents {
   margin-left: 150px;
 }
-
+#homeWord {
+  margin-left: -5px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 100;
+  color: #303030;
+  -webkit-text-stroke-color: #303030;
+  -webkit-text-stroke-width: 1;
+}
 .homeContents {
   margin-top: 10px;
   margin-left: 150px;
@@ -17,6 +31,7 @@
   border: solid 2px #418cff;
   font-size: 16px;
   font-weight: 100;
+  padding-left: 20px;
 }
 #inspotHome {
   width: 300px;
@@ -25,9 +40,10 @@
   border: solid 2px #418cff;
   font-size: 16px;
   font-weight: 100;
+  padding-left: 20px;
 }
 #button1 {
-  margin-top: 5px;
+  margin-top: 30px;
   width: 30px;
   height: 50px;
   border-radius: 12px;
@@ -35,29 +51,12 @@
   color : #ffffff;
 }
 #button2 {
-  margin-top: 5px;
+  margin-top: 30px;
   width: 30px;
   height: 50px;
   border-radius: 12px;
   background-color: #7589d3;
   color : #ffffff;
-}
-#placeWord {
-  margin-left: -5px;
-  margin-top: 0;
-  font-size: 20px;
-  font-weight: 100;
-  color: #303030;
-  -webkit-text-stroke-color: #303030;
-  -webkit-text-stroke-width: 1;
-}
-#homeWord {
-  margin-left: -5px;
-  font-size: 20px;
-  font-weight: 100;
-  color: #303030;
-  -webkit-text-stroke-color: #303030;
-  -webkit-text-stroke-width: 1;
 }
 #bold {
   font-size: 20px;
