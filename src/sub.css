@@ -8,6 +8,7 @@
 }
 
 .placeContents {
+  float: left;
   margin-top: 50px;
   margin-left: 150px;
 }
@@ -34,14 +35,16 @@
   font-weight: 100;
 }
 #button1 {
-  width: 10px;
+  margin-top: 5px;
+  width: 30px;
   height: 50px;
   border-radius: 12px;
   background-color: #7589d3;
   color : #ffffff;
 }
 #button2 {
-  width: 10px;
+  margin-top: 5px;
+  width: 30px;
   height: 50px;
   border-radius: 12px;
   background-color: #7589d3;
